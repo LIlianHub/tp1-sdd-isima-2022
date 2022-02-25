@@ -203,7 +203,7 @@ Après le passage dans notre programme les informations stockées dans notre fic
 \section{Présentation des Fonctions}
 Passons maintenant à la présentation de toutes nos fonctions.\newline
 
-Mais avons cela nous nous devons de faire une aparté: nous avons pris la décision dans ce TP, dans chaque structure contenant des chaines de caractère de rajouter le caractère \textbf{'\textbackslash0'} en fin de chaine. En effet ce caractère est un élément essentiel du langage C est nous n'avons pas voulu nous en séparer. Sinon nous aurions été obligé de recoder toutes les fonctions de \textbf{string.h}. Ainsi dans chaque structure les chaines de caractères sont sur un bit de plus afin de stocker ce dit caractère !
+Mais avant cela nous nous devons de faire une aparté: nous avons pris la décision dans ce TP, dans chaque structure contenant des chaines de caractère de rajouter le caractère \textbf{'\textbackslash0'} en fin de chaine. En effet ce caractère est un élément essentiel du langage C est nous n'avons pas voulu nous en séparer. Sinon nous aurions été obligé de recoder toutes les fonctions de \textbf{string.h}. Ainsi dans chaque structure les chaines de caractères sont sur un bit de plus afin de stocker ce dit caractère !
 
 \subsection{tete.h et tete.c}
 
@@ -236,7 +236,7 @@ Passons à \textbf{semaine.h} qui contient la structure "semaine".
 	\caption{Structure "semaine"}
 \end{figure}
 
-Comme avec "tete", la seule fonction en lien avec cette structure est \textbf{AlloueSemaine"} qui a pour but d'allouer de la mémoire à un élément de type "semaine". Cette fonction prend en argument un pointeur indirect sur une structure de type semaine, une string contenant une année et une autre string avec un numéros de semaine. Elle va tout de même contrôler si jamais les infos qu'ont lui a donné en paramètre sont valides (numéro de semaine bien compris entre 1 et 53).  Elle renvoie 0 si tout c'est bien passé et -1 si l'allocation a raté ou les valeurs entrées sont mauvaises. L'année ainsi que le numéro de semaine sont concaténés dans le champs \textbf{annee\_semaine}, cela nous evitera des tests en trop dans de futurs fonctions.
+Comme avec "tete", la seule fonction en lien avec cette structure est \textbf{AlloueSemaine"} qui a pour but d'allouer de la mémoire à un élément de type "semaine". Cette fonction prend en argument un pointeur indirect sur une structure de type semaine, une string contenant une année et une autre string avec un numéro de semaine. Elle va tout de même contrôler si jamais les informations qu'ont lui a donné en paramètre sont valides (numéro de semaine bien compris entre 1 et 53).  Elle renvoie 0 si tout c'est bien passé et -1 si l'allocation a raté ou les valeurs entrées sont mauvaises. L'année ainsi que le numéro de semaine sont concaténés dans le champs \textbf{annee\_semaine}, cela nous evitera des tests en trop dans de futurs fonctions.
 
 \subsection{action.h et action.c}
 Enfin notre dernière structure est la structure \textbf{"action"} dont voici la forme:
@@ -252,7 +252,7 @@ Enfin notre dernière structure est la structure \textbf{"action"} dont voici la
 	\caption{Structure "action"}
 \end{figure}
 
-La fonction en lien avec celle-ci est \textbf{AlloueAction} qui va allouer de la mémoire pour une case action. Elle prend en argument un pointeur indirect sur une action ainsi que 3 strings possédants respectivement, une valeur entre 1 et 7 pour le jour, une heure et un nom. La fonction va vérifier si le jour ainsi que l'heure est valide ! Si tout c'est bien passé (allocation réussi et champs valides) la fonction renvoi 0 sinon elle renvoi -1.
+La fonction en lien avec celle-ci est \textbf{AlloueAction} qui va allouer de la mémoire pour une case action. Elle prend en argument un pointeur indirect sur une action ainsi que 3 strings possédants respectivement, une valeur entre 1 et 7 pour le jour, une heure et un nom. La fonction va vérifier si le jour ainsi que l'heure sont valides ! Si tout c'est bien passé (allocation réussi et champs valides) la fonction renvoi 0 sinon elle renvoi -1.
 
 \subsection{commun.h et commun.c}
 
@@ -271,7 +271,7 @@ La fonction \textbf{"EcritureFichier"} va elle prendre en argument un nom de fic
 Voyons maintenant toutes les fonctions utilisant des allocations ou des libérations de mémoire !\newline
 
 La fonction \textbf{"CreationElement"} est une fonction outil qui prend en argument 5 strings avec toutes les informations possibles d'une activité (année, numéro de semaine, jour, heure, nom) ainsi qu'un pointeur indirect sur une semaine. Il va allouer en mémoire la semaine ainsi que l'action correspondant aux informations données et les relier entre eux ! 
-La fonction renvoie 1 si tous c'est bien passé, 0 si une allocation a raté et -1 si les 2 ont ratés !\newline
+La fonction renvoie 1 si tout s'est bien passé, 0 si une allocation a ratée et -1 si les 2 ont ratées !\newline
 
 \begin{figure}[H]
 	\includegraphics[scale=0.5]{nouvSemaine.png}
@@ -299,26 +299,26 @@ Nous avons ensuite différents cas d'ajout à gérer:
 	\item L'ajout quand la semaine n'existe pas ! A ce moment là on doit vérifier que la semaine à ajouter n'est pas à positionner en tête de SDD, si c'est le cas on change le pointeur de notre tête fictive, sinon on ajoute simplement notre semaine avec le pointeur précédent semaine !\newline
 \end{itemize}
 
-La fonction \textbf{"SupprStruct"} prend elle en argument un pointeur sur notre tête fictive et sur un élément de la forme de la figure \ref{element-default} (c'est à dire une semaine pointant sur une action). On va parcourir toutes notre SDD en cherchant une semaine puis une action identique à celles prisent en argument ! Une fois cela fait, si on cette action existe, on la supprime, sinon on fait rien ! Si l'action est bien supprimée on renvoie 1, si la semaine visée n'existe pas dans la SDD on renvoie 0 enfin si l'action n'existe pas on renvoie -1.  Nous avons encore une fois plusieurs cas à traiter:
+La fonction \textbf{"SupprStruct"} prend elle en argument un pointeur sur notre tête fictive et sur un élément de la forme de la figure \ref{element-default} (c'est à dire une semaine pointant sur une action). On va parcourir toute notre SDD en cherchant une semaine puis une action identique à celle prise en argument ! Une fois cela fait, si on cette action existe, on la supprime, sinon on fait rien ! Si l'action est bien supprimée on renvoie 1, si la semaine visée n'existe pas dans la SDD on renvoie 0 enfin si l'action n'existe pas on renvoie -1.  Nous avons encore une fois plusieurs cas à traiter:
 
 \begin{itemize}
-	\item La semaine n'existe pas: on fait rien
-	\item L'action n'existe pas: on fait rien
-	\item On supprime la première action d'une semaine. A ce moment là on doit changer l'action pointé par la semaine puis libérer la mémoire de cette action.
-	\item On supprime une action pas en tête. A ce moment là on juste a changer les pointeurs en faisant pointer le précédents de cette dite action sur la suivant de celle-ci puis de libérer la mémoire de cette action !
+	\item La semaine n'existe pas: on ne fait rien
+	\item L'action n'existe pas: on ne fait rien
+	\item On supprime la première action d'une semaine. A ce moment là on doit changer l'action pointée par la semaine puis libérer la mémoire de cette action.
+	\item On supprime une action pas en tête. A ce moment là on a juste à changer les pointeurs en faisant pointer le précédents de cette dite action sur la suivant de celle-ci puis de libérer la mémoire de cette action !
 	\item Après suppression d'une action, on se rend compte que la semaine est maintenant vide ! On doit donc la supprimer elle aussi ! Soit c'est la première et on change le pointeur de la tête fictive soit on joue rediriger le pointeur précédent. Dans tous les cas on oublie pas de libérer la semaine à supprimer !\newline
 \end{itemize}
 
 \subsubsection{Affichage}
 
-La fonction \textbf{AffichageAgenda} est toutes simples. Elle parcourt entièrement notre SDD et affiche pour chaque élément "semaine" toutes les actions qu'il contient ! On utilise un tableau statique contenant tous les jours de la semaine pour faire un affichage plus propre. Le principe est simple: On récupère la valeur ascii du jour à afficher auquel on enlève la valeur ascii du char "1". Ainsi, pour Lundi on aura l'indice 0, mardi l'indice 1 ... On a plus qu'à afficher la string présente à l'indice du tableau voulu !  
+La fonction \textbf{AffichageAgenda} est toute simple. Elle parcourt entièrement notre SDD et affiche pour chaque élément "semaine" toutes les actions qu'il contient ! On utilise un tableau statique contenant tous les jours de la semaine pour faire un affichage plus propre. Le principe est simple: On récupère la valeur ascii du jour à afficher auquel on enlève la valeur ascii du char "1". Ainsi, pour Lundi on aura l'indice 0, mardi l'indice 1 ... On a plus qu'à afficher la string présente à l'indice du tableau voulu !  
 
 \subsection{contigue.h et contigue.c}
 
-Enfin voyons les fonctions en lien avec la liste contiguë qui cherche un motif. Nous rappelons que l'on doit, à l'aide d'un motif pris en argument, cherche si celui-ci apparait dans le nom de nos actions et si c'est le cas, stocker la date de cette actions dans une liste contiguë.\newline
+Enfin voyons les fonctions en lien avec la liste contiguë qui cherche un motif. Nous rappelons que l'on doit, à l'aide d'un motif pris en argument, chercher si celui-ci apparait dans le nom de nos actions et si c'est le cas, stocker la date de cette actions dans une liste contiguë.\newline
 La liste contiguë est toutes simples: c'est un tableau de char en 2 dimensions statique ayant un nombre de ligne limité défini par la valeur \textbf{MAX\_TAILLE\_CONTIGUE} présent dans contigue.h. Chaque string contenu dans cette liste est de taille \textbf{TAILLE\_DATE\_ACTION}. Cette taille est de 10 car l'on stocke les 6 bytes de l'année ainsi que du numéro de semaine puis les 3 bytes du jour et de l'heure et enfin le char '$\backslash$0'. Nous avons mis la liste contiguë en variable globale dans le fichier contigue.h. Ainsi on commence à définir deux pointeurs de type "char", un de début et un de fin et on appelle la fonction InitContigue qui va les placer correctement.\newline
 
-La fonction \textbf{InitContigue} prend donc en argument notre liste contiguë et deux pointeurs indirects "debut\_contigue" et "fin\_contigue". Au départ la liste étant vide, on les place tous les deux au début de la liste c'est à dire qu'ils prennent l'adresse "contigue[0]". Après cela on aura utilisera plus la notation "[ ]" des tableaux en C mais bien juste nos 2 pointeurs de début et de fin.
+La fonction \textbf{InitContigue} prend donc en argument notre liste contiguë et deux pointeurs indirects "debut\_contigue" et "fin\_contigue". Au départ la liste étant vide, on les place tous les deux au début de la liste c'est à dire qu'ils prennent l'adresse "contigue[0]". Après cela on utilisera plus la notation "[ ]" des tableaux en C mais bien juste nos 2 pointeurs de début et de fin.
 
 Ensuite, la fonction \textbf{RemplisContigue} prend en argument un motif, notre tête fictive et nos pointeurs de début et de fin. On va créer un pointeur "parcours\_contigue" qui aura pour but de parcourir la liste contiguë et un pointeur "dernier\_element" qui pointe sur la dernière position possible où écrire dans notre liste contiguë. Si on essaye d'écrire plus loin on n'écrit plus dans la zone fixe allouée à notre liste. C'est donc pour cela que l'on vérifie dans le if si on a dépassé cette valeur ou pas ! On a donc maintenant plus qu'à parcourir entièrement toutes notre SDD et vérifier si le motif apparait dans le nom des actions (et que la liste contiguë n'est pas pleine), si c'est le cas alors on ajoute les informations de date dans la liste.
 La fonction va ensuite en toute fin placer le pointeur de fin de la liste contiguë qui correspond à l'adresse où se trouve la dernière chaine de caractère de taille 10.\newline
