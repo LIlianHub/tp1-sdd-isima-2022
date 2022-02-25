@@ -1,5 +1,8 @@
 # TP1 de SDD ISIMA 2021/2022
-## Rapport et Code
-### Manque les tests
+## A faire:
+Finir les tests et les mettres dans le rapport
+
+## Les modifications
+Les faire dans la branche "modif" !
 
 
