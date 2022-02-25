@@ -1,0 +1,21 @@
+\babel@toc {french}{}
+\contentsline {section}{\numberline {1}Présentation du TP}{1}{section.1}%
+\contentsline {section}{\numberline {2}Présentation de la structure}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Schéma de la structure}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Format des fichiers en entrée et en sortie}{2}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Présentation des Fonctions}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}tete.h et tete.c}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}semaine.h et semaine.c}{4}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}action.h et action.c}{4}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}commun.h et commun.c}{5}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Lecture et Ecriture dans les fichiers}{5}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Gestion d'allocation}{5}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}Ajout et Suppression}{6}{subsubsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.4}Affichage}{6}{subsubsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.5}contigue.h et contigue.c}{7}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Liste des cas}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Lecture}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Ajout}{8}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Suppression}{8}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Contiguë}{8}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Annexe}{8}{section.5}%
