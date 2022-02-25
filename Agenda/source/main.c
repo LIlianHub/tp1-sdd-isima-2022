@@ -6,6 +6,7 @@
 #include "../headers/commun.h"
 #include "../headers/contigue.h"
 
+/*COUCOU BEBER*/
 
 int main(int argc, char *argv[]){
         if(argc == 2){
