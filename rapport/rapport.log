@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.20)  25 FEB 2022 15:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.20)  28 FEB 2022 12:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -775,12 +775,278 @@ Underfull \hbox (badness 10000) in paragraph at lines 323--325
 
  []
 
-(./rapport.lof
+
+Underfull \hbox (badness 10000) in paragraph at lines 333--334
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 337--338
+
+ []
+
 File: uca-p.png Graphic file (type png)
 <use uca-p.png>
-Package pdftex.def Info: uca-p.png  used on input line 3.
+Package pdftex.def Info: uca-p.png  used on input line 338.
 (pdftex.def)             Requested size: 25.6975pt x 25.6975pt.
- [7])
+[7]
+<s-vide.png, id=200, 629.35126pt x 169.63374pt>
+File: s-vide.png Graphic file (type png)
+<use s-vide.png>
+Package pdftex.def Info: s-vide.png  used on input line 340.
+(pdftex.def)             Requested size: 377.61366pt x 101.78102pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
+
+ []
+
+<s-fausse.png, id=201, 633.36626pt x 163.61125pt>
+File: s-fausse.png Graphic file (type png)
+<use s-fausse.png>
+Package pdftex.def Info: s-fausse.png  used on input line 348.
+(pdftex.def)             Requested size: 380.02269pt x 98.1675pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 353--354
+
+ []
+
+<a-fausse.png, id=202, 638.385pt x 165.61874pt>
+File: a-fausse.png Graphic file (type png)
+<use a-fausse.png>
+Package pdftex.def Info: a-fausse.png  used on input line 356.
+(pdftex.def)             Requested size: 383.03394pt x 99.37201pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 365--366
+
+ []
+
+File: uca-p.png Graphic file (type png)
+<use uca-p.png>
+Package pdftex.def Info: uca-p.png  used on input line 366.
+(pdftex.def)             Requested size: 25.6975pt x 25.6975pt.
+[8 <./s-vide.png> <./s-fausse.png> <./a-fausse.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 367--368
+
+ []
+
+<aj-premier.png, id=214, 543.02875pt x 144.54pt>
+File: aj-premier.png Graphic file (type png)
+<use aj-premier.png>
+Package pdftex.def Info: aj-premier.png  used on input line 370.
+(pdftex.def)             Requested size: 325.81975pt x 86.72466pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--376
+
+ []
+
+<aj-tsem.png, id=215, 590.205pt x 218.8175pt>
+File: aj-tsem.png Graphic file (type png)
+<use aj-tsem.png>
+Package pdftex.def Info: aj-tsem.png  used on input line 378.
+(pdftex.def)             Requested size: 354.12573pt x 131.2915pt.
+
+Overfull \hbox (26.1817pt too wide) in paragraph at lines 383--384
+[]\T1/lmr/m/n/12 On fait de même mais en ajou-tant en-suite une se-maine en fin
+ de liste ! C'est \T1/lmr/bx/n/12 ajout_fin_semaine\T1/lmr/m/n/12 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 383--384
+
+ []
+
+<aj-fsem.png, id=216, 583.17876pt x 221.82875pt>
+File: aj-fsem.png Graphic file (type png)
+<use aj-fsem.png>
+Package pdftex.def Info: aj-fsem.png  used on input line 386.
+(pdftex.def)             Requested size: 349.90996pt x 133.09825pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--392
+
+ []
+
+File: uca-p.png Graphic file (type png)
+<use uca-p.png>
+Package pdftex.def Info: uca-p.png  used on input line 392.
+(pdftex.def)             Requested size: 25.6975pt x 25.6975pt.
+[9 <./aj-premier.png> <./aj-tsem.png> <./aj-fsem.png>]
+<aj-csem.png, id=228, 635.37375pt x 312.16624pt>
+File: aj-csem.png Graphic file (type png)
+<use aj-csem.png>
+Package pdftex.def Info: aj-csem.png  used on input line 394.
+(pdftex.def)             Requested size: 381.22719pt x 187.3012pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 399--400
+
+ []
+
+<aj-tac.png, id=229, 599.23875pt x 207.77625pt>
+File: aj-tac.png Graphic file (type png)
+<use aj-tac.png>
+Package pdftex.def Info: aj-tac.png  used on input line 402.
+(pdftex.def)             Requested size: 359.54602pt x 124.6667pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 407--408
+
+ []
+
+<aj-fac.png, id=230, 577.15625pt x 182.6825pt>
+File: aj-fac.png Graphic file (type png)
+<use aj-fac.png>
+Package pdftex.def Info: aj-fac.png  used on input line 410.
+(pdftex.def)             Requested size: 346.29642pt x 109.61034pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 415--416
+
+ []
+
+File: uca-p.png Graphic file (type png)
+<use uca-p.png>
+Package pdftex.def Info: uca-p.png  used on input line 416.
+(pdftex.def)             Requested size: 25.6975pt x 25.6975pt.
+[10 <./aj-csem.png> <./aj-tac.png> <./aj-fac.png>]
+<aj-cac.png, id=242, 632.3625pt x 199.74625pt>
+File: aj-cac.png Graphic file (type png)
+<use aj-cac.png>
+Package pdftex.def Info: aj-cac.png  used on input line 418.
+(pdftex.def)             Requested size: 379.42043pt x 119.84866pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 427--428
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 429--430
+
+ []
+
+<su-su.png, id=243, 615.29875pt x 254.9525pt>
+File: su-su.png Graphic file (type png)
+<use su-su.png>
+Package pdftex.def Info: su-su.png  used on input line 432.
+(pdftex.def)             Requested size: 369.1821pt x 152.97266pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 437--438
+
+ []
+
+<su-st.png, id=244, 595.22375pt x 359.3425pt>
+File: su-st.png Graphic file (type png)
+<use su-st.png>
+Package pdftex.def Info: su-st.png  used on input line 440.
+(pdftex.def)             Requested size: 357.13701pt x 215.60715pt.
+File: uca-p.png Graphic file (type png)
+<use uca-p.png>
+Package pdftex.def Info: uca-p.png  used on input line 444.
+(pdftex.def)             Requested size: 25.6975pt x 25.6975pt.
+[11 <./aj-cac.png> <./su-su.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 445--446
+
+ []
+
+<su-sf.png, id=254, 582.175pt x 370.38374pt>
+File: su-sf.png Graphic file (type png)
+<use su-sf.png>
+Package pdftex.def Info: su-sf.png  used on input line 448.
+(pdftex.def)             Requested size: 349.3077pt x 222.23195pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--454
+
+ []
+
+<su-sc.png, id=255, 639.38875pt x 478.78876pt>
+File: su-sc.png Graphic file (type png)
+<use su-sc.png>
+Package pdftex.def Info: su-sc.png  used on input line 456.
+(pdftex.def)             Requested size: 383.6362pt x 287.27547pt.
+File: uca-p.png Graphic file (type png)
+<use uca-p.png>
+Package pdftex.def Info: uca-p.png  used on input line 460.
+(pdftex.def)             Requested size: 25.6975pt x 25.6975pt.
+[12 <./su-st.png> <./su-sf.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 461--462
+
+ []
+
+<su-at.png, id=266, 584.1825pt x 331.2375pt>
+File: su-at.png Graphic file (type png)
+<use su-at.png>
+Package pdftex.def Info: su-at.png  used on input line 464.
+(pdftex.def)             Requested size: 350.51219pt x 198.74402pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 469--470
+
+ []
+
+<su-af.png, id=267, 573.14125pt x 336.25626pt>
+File: su-af.png Graphic file (type png)
+<use su-af.png>
+Package pdftex.def Info: su-af.png  used on input line 472.
+(pdftex.def)             Requested size: 343.8874pt x 201.75531pt.
+File: uca-p.png Graphic file (type png)
+<use uca-p.png>
+Package pdftex.def Info: uca-p.png  used on input line 476.
+(pdftex.def)             Requested size: 25.6975pt x 25.6975pt.
+[13 <./su-sc.png> <./su-at.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 477--478
+
+ []
+
+<su-ac.png, id=277, 627.34375pt x 366.36874pt>
+File: su-ac.png Graphic file (type png)
+<use su-ac.png>
+Package pdftex.def Info: su-ac.png  used on input line 480.
+(pdftex.def)             Requested size: 376.40915pt x 219.82294pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 485--486
+
+ []
+
+<su-ep.png, id=278, 627.34375pt x 381.425pt>
+File: su-ep.png Graphic file (type png)
+<use su-ep.png>
+Package pdftex.def Info: su-ep.png  used on input line 488.
+(pdftex.def)             Requested size: 376.40915pt x 228.85675pt.
+File: uca-p.png Graphic file (type png)
+<use uca-p.png>
+Package pdftex.def Info: uca-p.png  used on input line 492.
+(pdftex.def)             Requested size: 25.6975pt x 25.6975pt.
+[14 <./su-af.png> <./su-ac.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 495--496
+
+ []
+
+<co-ep.png, id=288, 578.16pt x 145.54375pt>
+File: co-ep.png Graphic file (type png)
+<use co-ep.png>
+Package pdftex.def Info: co-ep.png  used on input line 498.
+(pdftex.def)             Requested size: 346.89867pt x 87.3269pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 504--505
+
+ []
+
+<co-tm.png, id=289, 563.10374pt x 426.59375pt>
+File: co-tm.png Graphic file (type png)
+<use co-tm.png>
+Package pdftex.def Info: co-tm.png  used on input line 507.
+(pdftex.def)             Requested size: 337.86485pt x 255.95822pt.
+File: uca-p.png Graphic file (type png)
+<use uca-p.png>
+Package pdftex.def Info: uca-p.png  used on input line 511.
+(pdftex.def)             Requested size: 25.6975pt x 25.6975pt.
+[15 <./su-ep.png> <./co-ep.png>]
+<co-mc.png, id=299, 607.26875pt x 193.72375pt>
+File: co-mc.png Graphic file (type png)
+<use co-mc.png>
+Package pdftex.def Info: co-mc.png  used on input line 515.
+(pdftex.def)             Requested size: 364.36406pt x 116.23514pt.
+File: uca-p.png Graphic file (type png)
+<use uca-p.png>
+Package pdftex.def Info: uca-p.png  used on input line 521.
+(pdftex.def)             Requested size: 25.6975pt x 25.6975pt.
+ [16 <./co-tm.png> <./co-mc.png>]
+(./rapport.lof)
 \tf@lof=\write5
 \openout5 = `rapport.lof'.
 
@@ -788,23 +1054,23 @@ Package pdftex.def Info: uca-p.png  used on input line 3.
 AED: lastpage setting LastPage
 File: uca-p.png Graphic file (type png)
 <use uca-p.png>
-Package pdftex.def Info: uca-p.png  used on input line 343.
+Package pdftex.def Info: uca-p.png  used on input line 527.
 (pdftex.def)             Requested size: 25.6975pt x 25.6975pt.
-[8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 343.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 343.
+[17]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 527.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 527.
  (./rapport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 343.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 343.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 527.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 527.
 Package rerunfilecheck Info: File `rapport.out' has not changed.
 (rerunfilecheck)             Checksum: 3BE5C7BEC6E5BF28836A8E43E693D461;1353.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 343.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 527.
  ) 
 Here is how much of TeX's memory you used:
- 11104 strings out of 483154
- 158406 string characters out of 5965023
+ 11260 strings out of 483154
+ 160314 string characters out of 5965023
  651670 words of memory out of 5000000
- 25841 multiletter control sequences out of 15000+600000
+ 25946 multiletter control sequences out of 15000+600000
  584803 words of font info for 56 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  34i,16n,51p,810b,1510s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -817,10 +1083,10 @@ onts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10
 /type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></
 usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on rapport.pdf (9 pages, 578678 bytes).
+Output written on rapport.pdf (18 pages, 981145 bytes).
 PDF statistics:
- 265 PDF objects out of 1000 (max. 8388607)
- 230 compressed objects within 3 object streams
- 57 named destinations out of 1000 (max. 500000)
- 196 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 401 PDF objects out of 1000 (max. 8388607)
+ 314 compressed objects within 4 object streams
+ 87 named destinations out of 1000 (max. 500000)
+ 301 words of extra memory for PDF output out of 10000 (max. 10000000)
 

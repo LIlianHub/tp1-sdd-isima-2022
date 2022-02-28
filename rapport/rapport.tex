@@ -328,13 +328,197 @@ Au final \textbf{AfficheContigue} parcours tous les éléments existants dans la
 
 \section{Liste des cas}
 
-Nous allons ici vous présenter la liste des cas possibles et leurs jeux de donnée attitrés afin que vous puissiez tous les tester.
+Nous allons ici vous présenter la liste des cas possibles et leurs jeux de donnée attitrés afin que vous puissiez tous les tester. 
+
+Pour voir un exemple moins précis avec la création d'un agenda un peu dense, nous vous avons fourni le fichier \textbf{classique} ! Mais maintenant regardons de manière plus précise tout les cas:\newline
 
 \subsection{Lecture}
+
+Le premier cas de la section lecture est \textbf{lec\_vide}: On donne simplement en entrée un fichier vide et on regarde comment le programme réagit. Ici on aura un affichage de l'agenda vide et un fichier en sortie vide ! On a aucun soucis de mémoire.\newline
+
+\begin{figure}[H]
+	\includegraphics[scale=0.6]{s-vide.png}
+	\centering
+	\caption{Résultat pour "lec\_vide"}
+\end{figure}
+
+Ensuite on essaye d'entrer un fichier ayant une seule ligne avec une erreur sur l'action ! C'est \textbf{lec\_semaine\_fausse}. Comme prévu le programme ne va pas ajouter l'élément car il est faux et aura donc un agenda vide et aucune fuite mémoire à la fin ! Le fichier de sortie attitré et devenu un fichier vide !\newline
+
+\begin{figure}[H]
+	\includegraphics[scale=0.6]{s-fausse.png}
+	\centering
+	\caption{Résultat pour "lec\_semaine\_fausse"}
+\end{figure}
+
+Enfin on essaye de donner un fichier avec une seule ligne qui contient une erreur sur l'action ! C'est \textbf{lec\_action\_fausse} ! Comme pour avant l'agenda et le fichier de sortie seront vide et on aura aucune fuite de mémoire !\newline
+
+\begin{figure}[H]
+	\includegraphics[scale=0.6]{a-fausse.png}
+	\centering
+	\caption{Résultat pour "lec\_action\_fausse"}
+\end{figure}
+
+\textbf{Note importante:} A partir de maintenant nous n'entrons plus d'erreur dans les fichiers d'entrées ! Ainsi, nos fichiers de sortie auront exactement le même nombre de ligne que nos fichiers d'entrée. Cependant, étant triés dans l'agenda par ordre croissant, nos éléments seront triés dans le fichier de sortie !
+
 \subsection{Ajout}
+
+Pour la partie ajout, les éléments dont on observe l'ajout sont toujours écrit sur la \textbf{dernière ligne} de leur fichier de test !\newline
+
+On commence donc avec l'ajout du premier élément ! C'est \textbf{ajout\_premier} ! On obtient un agenda avec tout naturellement un seul élément !\newline
+
+\begin{figure}[H]
+	\includegraphics[scale=0.6]{aj-premier.png}
+	\centering
+	\caption{Résultat pour "ajout\_premier"}
+\end{figure}
+
+Ensuite on va essayer d'ajouter un élément "semaine" en tête de liste alors que l'agenda contient déjà des éléments ! C'est \textbf{ajout\_tete\_semaine}. On voit bien que l'élément "TETE" a été ajouté en tête de liste !\newline
+
+\begin{figure}[H]
+	\includegraphics[scale=0.6]{aj-tsem.png}
+	\centering
+	\caption{Résultat pour "ajout\_tete\_semaine"}
+\end{figure}
+
+On fait de même mais en ajoutant ensuite une semaine en fin de liste ! C'est \textbf{ajout\_fin\_semaine}. L'élément "FIN" apparait bien en fin de liste !\newline
+
+\begin{figure}[H]
+	\includegraphics[scale=0.6]{aj-fsem.png}
+	\centering
+	\caption{Résultat pour "ajout\_fin\_semaine"}
+\end{figure}
+
+Puis pour finir au niveau de l'insertion des semaines, on fait une insertion classique au milieu de la SDD ! C'est \textbf{ajout\_classique\_semaine} ! On voit bien que "Classique" c'est bien ajouté au milieu de la SDD, à sa place !\newline
+
+\begin{figure}[H]
+	\includegraphics[scale=0.6]{aj-csem.png}
+	\centering
+	\caption{Résultat pour "ajout\_classique\_semaine"}
+\end{figure}
+
+Passons au ajout d'action avec \textbf{ajout\_tete\_action} qui va ajouter une action en tête de semaine ! Comme prévu, l'élément "DEBUT" est bien en tête de l'unique semaine de la SDD !\newline
+
+\begin{figure}[H]
+	\includegraphics[scale=0.6]{aj-tac.png}
+	\centering
+	\caption{Résultat pour "ajout\_tete\_action"}
+\end{figure}
+
+On va maintenant ajouter une action en fin de semaine en utilisant \textbf{ajout\_fin\_action} ! Le résultat est bon, on voit bien l'élément "FIN" en fin de l'unique semaine de la SDD !\newline
+
+\begin{figure}[H]
+	\includegraphics[scale=0.6]{aj-fac.png}
+	\centering
+	\caption{Résultat pour "ajout\_fin\_action"}
+\end{figure}
+
+Pour fini avec les ajouts, on fait un ajout d'action classique en milieu de semaine avec \textbf{ajout\_classique\_action} !\newline
+
+\begin{figure}[H]
+	\includegraphics[scale=0.6]{aj-cac.png}
+	\centering
+	\caption{Résultat pour "ajout\_classique\_action"}
+\end{figure}
+
 \subsection{Suppression}
+
+\textbf{Note:} Pour la partie suppression, nous avons modifié le fichier "main.c" afin de modifier la valeur de l'élément à supprimer ! Si vous souhaitez tester certains comportement, nous vous avons laisser un exemple de suppression !
+
+Ici les fichiers de sortie ne contiendront pas l'élément supprimer par le programme ! \newline
+
+Commençons avec le cas où l'on supprime la seule semaine existante dans la SDD et qu'elle devient vide ! C'est \textbf{suppr\_semaine\_unique} ! Le résultat après suppression est l'agenda vide !\newline
+
+\begin{figure}[H]
+	\includegraphics[scale=0.6]{su-su.png}
+	\centering
+	\caption{Résultat pour "suppr\_semaine\_unique"}
+\end{figure}
+
+On va maintenant supprimer la semaine en tête avec \textbf{suppr\_semaine\_tete} ! Ici on voit bien que la semaine en tête à bien disparu ! \newline
+
+\begin{figure}[H]
+	\includegraphics[scale=0.6]{su-st.png}
+	\centering
+	\caption{Résultat pour "suppr\_semaine\_tete"}
+\end{figure}
+
+Ici on va supprimer la dernière semaine de la SDD avec \textbf{suppr\_semaine\_fin}:\newline
+
+\begin{figure}[H]
+	\includegraphics[scale=0.6]{su-sf.png}
+	\centering
+	\caption{Résultat pour "suppr\_semaine\_fin"}
+\end{figure}
+
+Enfin pour en finir avec les semaines on va supprimer une semaine au milieu de la SDD avec \textbf{suppr\_semaine\_classique}:\newline
+
+\begin{figure}[H]
+	\includegraphics[scale=0.6]{su-sc.png}
+	\centering
+	\caption{Résultat pour "suppr\_semaine\_classique"}
+\end{figure}
+
+Passons maintenant aux actions: ici avec \textbf{suppr\_action\_tete}, on va supprimer une action en tête de semaine !\newline
+
+\begin{figure}[H]
+	\includegraphics[scale=0.6]{su-at.png}
+	\centering
+	\caption{Résultat pour "suppr\_action\_tete"}
+\end{figure}
+
+Ici on supprime une action en fin de semaine avec \textbf{suppr\_action\_fin}.\newline
+
+\begin{figure}[H]
+	\includegraphics[scale=0.6]{su-af.png}
+	\centering
+	\caption{Résultat pour "suppr\_action\_fin"}
+\end{figure}
+
+Ensuite, ici, avec \textbf{suppr\_action\_classique}, on supprime une action en milieu de semaine !\newline
+
+\begin{figure}[H]
+	\includegraphics[scale=0.6]{su-ac.png}
+	\centering
+	\caption{Résultat pour "suppr\_action\_classique"}
+\end{figure}
+
+Enfin avec le fichier \textbf{suppr\_action\_classique}, on a essayé de supprimer une action puis une semaine qui existait pas ! On remarque que rien n'est supprimé !\newline
+
+\begin{figure}[H]
+	\includegraphics[scale=0.6]{su-ep.png}
+	\centering
+	\caption{Résultat quand l'action qu'on essaye de supprimer n'existe pas}
+\end{figure}
+
 \subsection{Contiguë}
 
+Enfin on fini avec la partie sur la liste contiguë. Pour commencer testons de chercher le motif "ABC" qui n'apparait pas dans le fichier \textbf{con\_motif\_absent}. On voit que la liste contiguë reste vide:\newline
+
+\begin{figure}[H]
+	\includegraphics[scale=0.6]{co-ep.png}
+	\centering
+	\caption{Résultat avec "con\_motif\_absent" et le motif "ABC"}
+\end{figure}
+
+
+Maintenant regardons si on a plus de motif que de place dans la liste ! Dans le fichier \textbf{con\_trop\_motif}, on a 18 fois le motif "1" qui apparait et notre liste à une taille fixée de 16 ! On voit que seul les 16 premiers motifs sont affichés !\newline
+
+\begin{figure}[H]
+	\includegraphics[scale=0.6]{co-tm.png}
+	\centering
+	\caption{Résultat avec "con\_trop\_motif" et le motif "1"}
+\end{figure}
+
+Enfin dernier cas, regardons une recherche de motif classique (assez de place dans la liste). On utilise ici \textbf{con\_motif\_classique} et on lui demande de recherche le motif "TD":
+
+\begin{figure}[H]
+	\includegraphics[scale=0.6]{co-mc.png}
+	\centering
+	\caption{Résultat avec "con\_motif\_classique" et le motif "TD"}
+\end{figure}
+
+
+\newpage
 \section{Annexe}
 \listoffigures
 

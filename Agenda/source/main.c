@@ -12,15 +12,15 @@ int main(int argc, char *argv[]){
                 int bonneLecture = LectureFichier(agenda, argv[1]);
                 if(bonneLecture){
                         //Premier affichage
-                        AffichageAgenda(agenda);
+                        //AffichageAgenda(agenda);
                         
                         //Exemple avec la liste contigue et le motif "TD"
                         char * debut_contigue = NULL;
                         char * fin_contigue = NULL;
                         InitContigue(CONTIGUE, &debut_contigue, &fin_contigue);
-                        RemplisContigue(agenda,"T", &debut_contigue, &fin_contigue);
+                        RemplisContigue(agenda,"TD", &debut_contigue, &fin_contigue);
                         AfficheContigue(debut_contigue,fin_contigue);
-
+                        /*
                         //Exemple de Supression
                         //Ici on supprime L'activité "Boulot" ayant lieu le
                         //Lundi de la semaine 15 de l'année 2022 à 12h
@@ -28,12 +28,14 @@ int main(int argc, char *argv[]){
                         CreationElement(&supprExemple, "2022", "15", "1", "12", "Boulot    ");
                         SupprStruct(agenda, supprExemple);
                         LiberationElement(supprExemple);
+
+                        printf("-> Suppression <-\n");
                         
                         //Affichage de notre agenda après modification
                         AffichageAgenda(agenda);
 
                         //Ecriture de la SDD dans le fichier sauvegarde
-                        //Dans un fichier ayant le même nom qu'en entrée
+                        //Dans un fichier ayant le même nom qu'en entrée*/
                         EcritureFichier(agenda, argv[1]);
                 }
                 else{

@@ -157,7 +157,6 @@ int SupprStruct(tete_t * agenda, semaine_t * param){
 
         //La semaine pointée par parcours est la même que celle à supprimer !
         else{
-
             parcours_action = parcours_semaine->liste_action;
             prec_action = parcours_action;
 
@@ -165,15 +164,16 @@ int SupprStruct(tete_t * agenda, semaine_t * param){
             //supprimer
 
             //On cherche un jour et une heure identique
-            while (parcours_action != NULL && strcmp (param->liste_action->jour_heure, parcours_action->jour_heure) > 0){
+            while ((parcours_action->suivant != NULL) && (strcmp(param->liste_action->jour_heure, parcours_action->jour_heure) > 0)){
 
                 prec_action = parcours_action;
                 parcours_action = parcours_action->suivant;
             
             }
 
+    
             //ON cherche le nom identique
-            while(strcmp (param->liste_action->nom , parcours_action->nom) > 0){
+            while((parcours_action->suivant != NULL) && (strcmp(param->liste_action->nom , parcours_action->nom) > 0)){
                 //ON cherche nom
                 prec_action = parcours_action;
                 parcours_action = parcours_action->suivant;
